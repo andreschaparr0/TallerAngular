@@ -1,0 +1,60 @@
+/* Contenedor principal */
+.container {
+  display: flex; /* Flexbox para disposición horizontal */
+  justify-content: space-between; /* Espacio entre la tabla y el detalle */
+  align-items: flex-start; /* Alineación superior de ambos elementos */
+  gap: 20px; /* Espacio entre la tabla y el cuadro */
+  padding: 20px; /* Espaciado interno general */
+  background-color: #f5f5f5; /* Fondo suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Tabla de series */
+.table {
+  width: 100%; /* Tabla ocupa todo el espacio del contenedor */
+  border-collapse: collapse; /* Bordes colapsados */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evitar que bordes sobresalgan */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.table th {
+  background-color: #4CAF50; /* Fondo verde */
+  color: white; /* Texto blanco */
+  text-align: left; /* Alineación izquierda */
+  padding: 12px; /* Espaciado interno */
+}
+
+.table td {
+  padding: 10px; /* Espaciado interno */
+  text-align: left; /* Alineación izquierda */
+  border-bottom: 1px solid #ddd; /* Línea inferior */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Fondo alterno */
+}
+
+.table tr:hover {
+  background-color: #ddd; /* Resaltar al pasar el cursor */
+  cursor: pointer; /* Cursor de mano */
+}
+
+/* Promedio */
+.promedio {
+  margin-top: 10px; /* Separación con la tabla */
+  font-size: 16px; /* Tamaño de texto */
+  color: #333; /* Color de texto */
+}
+
+/* Cuadro de detalle */
+.detalle-serie {
+  flex: 2; /* Ocupa menos espacio */
+  max-width: 30%; /* Limita el ancho del cuadro */
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}

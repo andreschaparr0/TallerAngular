@@ -1,0 +1,10 @@
+<div *ngIf="serie; else noSelection">
+  <h3>{{ serie.name }}</h3>
+  <img [src]="serie.poster" alt="{{ serie.name }}" class="poster">
+  <p><strong>Descripción:</strong> {{ serie.description }}</p>
+  <p><strong>Website:</strong> <a [href]="serie.webpage" target="_blank">{{ serie.webpage }}</a></p>
+</div>
+
+<ng-template #noSelection>
+  <p>Selecciona una serie para ver los detalles.</p>
+</ng-template>

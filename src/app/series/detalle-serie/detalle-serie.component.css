@@ -1,0 +1,15 @@
+h3 {
+    margin-bottom: 10px;
+  }
+  
+  .poster {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
